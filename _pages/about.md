@@ -9,6 +9,36 @@ I am spending a lot of time in the AWS ecosystem building serverless backends wi
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
+&nbsp;
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 [^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
