@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Isaac
+author: Isaac Mbuotidem
 ---
 When you choose to use a python venv virtual environment in vscode, you might run into the error below :
 
