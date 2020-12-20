@@ -4,18 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Isaac Mbuotidem | Isaac Mbuotidem’s Blog</title>
+<title>Error Connect Enetunreach 169.254.169.254.80 | Isaac Mbuotidem</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Isaac Mbuotidem" />
+<meta property="og:title" content="Error Connect Enetunreach 169.254.169.254.80" />
+<meta name="author" content="Isaac Mbuotidem" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Isaac Mbuotidem’s Blog" />
-<meta property="og:description" content="Isaac Mbuotidem’s Blog" />
-<link rel="canonical" href="https://mbuotidem.github.io/blog/" />
-<meta property="og:url" content="https://mbuotidem.github.io/blog/" />
+<meta name="description" content="When you are using the AWS Node.js SDK, you might encouter the error message :" />
+<meta property="og:description" content="When you are using the AWS Node.js SDK, you might encouter the error message :" />
+<link rel="canonical" href="https://mbuotidem.github.io/blog/2020/12/19/Error-connect-ENETUNREACH-169.254.169.254.80.html" />
+<meta property="og:url" content="https://mbuotidem.github.io/blog/2020/12/19/Error-connect-ENETUNREACH-169.254.169.254.80.html" />
 <meta property="og:site_name" content="Isaac Mbuotidem" />
-<meta property="og:image" content="https://mbuotidem.github.io/blog/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-19T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"Isaac Mbuotidem’s Blog","url":"https://mbuotidem.github.io/blog/","@type":"WebSite","headline":"Isaac Mbuotidem","image":"https://mbuotidem.github.io/blog/images/logo.png","name":"Isaac Mbuotidem","@context":"https://schema.org"}</script>
+{"description":"When you are using the AWS Node.js SDK, you might encouter the error message :","url":"https://mbuotidem.github.io/blog/2020/12/19/Error-connect-ENETUNREACH-169.254.169.254.80.html","@type":"BlogPosting","headline":"Error Connect Enetunreach 169.254.169.254.80","dateModified":"2020-12-19T00:00:00-06:00","datePublished":"2020-12-19T00:00:00-06:00","author":{"@type":"Person","name":"Isaac Mbuotidem"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://mbuotidem.github.io/blog/2020/12/19/Error-connect-ENETUNREACH-169.254.169.254.80.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mbuotidem.github.io/blog/feed.xml" title="Isaac Mbuotidem" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -67,49 +69,67 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="posts">Posts</h1>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Error Connect Enetunreach 169.254.169.254.80</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-12-19T00:00:00-06:00" itemprop="datePublished">
+        Dec 19, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Isaac Mbuotidem</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
+    
 
-  
+    </header>
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>When you are using the AWS Node.js SDK, you might encouter the error message :</p>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+<p><code class="language-plaintext highlighter-rouge">UnhandledPromiseRejectionWarning: Error: connect ENETUNREACH 169.254.169.254:80 at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1145:16).</code>
+<br />
+<br />
+<img src="/images/12_19_20.PNG" alt="Vscode integrated terminal displaying AWS Node.js SDK error" class="img-responsive" /></p>
 
- 
-  
+<p><br />
+<br />
+This error is likely occuring because the AWS SDK is unable to find your AWS credentials. 
+AWS Documentation has a list of ways you can <a href="https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html">load credentials in Node.js</a></p>
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/blog/2020/12/19/Error-connect-ENETUNREACH-169.254.169.254.80.html">
-    Error Connect Enetunreach 169.254.169.254.80
-    </a>
-</h3><p class="post-meta">Dec 19, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/10/09/venv-in-vscode-integrated-terminal.html">
-    Venv In Vscode Integrated Terminal
-    </a>
-</h3><p class="post-meta">Oct 9, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
+<p><br />
+Where the credential files are stored depends on your operating system.</p>
 
-    </div>
+<ul>
+  <li>
+    <p>on Linux, Unix, and macOS: <code class="language-plaintext highlighter-rouge">~/.aws/credentials</code></p>
+  </li>
+  <li>
+    <p>on Windows: <code class="language-plaintext highlighter-rouge">C:\Users\USER_NAME\.aws\credentials</code></p>
+  </li>
+</ul>
+
+<p><br />
+<br />
+In my case, the issue was that I did not have a <code class="language-plaintext highlighter-rouge">[default]</code> profile in my aws credentials file. As such, I needed to tell the AWS Node.js SDK which profile to use instead.</p>
+
+<p>Assuming your profile is named `myspecial-profile, here’s how you can do that :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const AWS = require('aws-sdk');
+AWS.config.region = 'us-east-1';
+var credentials = new AWS.SharedIniFileCredentials({profile: 'myspecial-profile'});
+AWS.config.credentials = credentials;
+
+</code></pre></div></div>
+
+<p>Learn more about loading AWS credentials in Node.js from the <a href="https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html" class="lnk">shared credentials file</a>.</p>
+
+  </div><a class="u-url" href="/blog/2020/12/19/Error-connect-ENETUNREACH-169.254.169.254.80.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blog/"></data>
