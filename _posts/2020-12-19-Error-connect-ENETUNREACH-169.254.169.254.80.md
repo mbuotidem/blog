@@ -7,7 +7,7 @@ When you are using the AWS Node.js SDK, you might encouter the error message :
 `UnhandledPromiseRejectionWarning: Error: connect ENETUNREACH 169.254.169.254:80 at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1145:16).`
 \
 \
-![Vscode integrated terminal displaying AWS Node.js SDK error](images/12_19_20.PNG){:class="img-responsive"}
+![Vscode integrated terminal displaying AWS Node.js SDK error]({{ site.baseurl }}/images/12_19_20.PNG){:class="img-responsive"}
 
 \
 \
