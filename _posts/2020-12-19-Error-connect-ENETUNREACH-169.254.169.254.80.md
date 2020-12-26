@@ -1,6 +1,8 @@
 ---
 layout: post
 author: Isaac Mbuotidem
+comments: true
+
 ---
 When you are using the AWS Node.js SDK, you might encouter the error message :
 
