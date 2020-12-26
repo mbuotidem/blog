@@ -200,7 +200,6 @@ let onSuccess = function (stream) {
 
     const canvasCtx = canvas.getContext("2d");
 
-    let tracks = stream.getTracks();
     context = new AudioContext();
     let mediaStreamSource = context.createMediaStreamSource(stream);
     recorder = new Recorder(mediaStreamSource);
@@ -211,7 +210,6 @@ let onSuccess = function (stream) {
 
     stop.onclick = function () {
         recorder.stop();
-        tracks.forEach(track => track.stop());
         
         recorder.exportWAV(function (s) {
             wav = window.URL.createObjectURL(s);
