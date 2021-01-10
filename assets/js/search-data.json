@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "How To Hot Reload Auto Refresh React App On Wsl",
-            "content": "Have you ever wanted to check back on a GitHub issue you made a comment on? I recently needed to do that and floundered about on the UI trying to find an link or button that would help me do that. Ultimately, I was unsuccessful and hand to turn to Google. Here’s how to do it courtesy of the the lovely folks at stackexchange. . Make sure you’re logged in and then enter the url . https://github.com/notifications/subscriptions?commenter={yourusername} . So in my case, that would be : . https://github.com/notifications/subscriptions?commenter=mbuotidem .",
+            "content": "If you’re working on a React app on Windows using Windows Subsystem for Linux (WSL), you might find that your app does not reflect your changes on save. . To fix that, you have two options. You can run your app with . $ CHOKIDAR_USEPOLLING=true npm start . Note however, that you will need to do this every time you want to start your app. . A more permanent solution is to create a .env file in your project directory if you don’t already have one and add . $ CHOKIDAR_USEPOLLING=true . to the .env file. . Credit : https://stackoverflow.com/a/56199112 .",
             "url": "https://mbuotidem.github.io/blog/2021/01/09/how-to-hot-reload-auto-refresh-react-app-on-WSL.html",
             "relUrl": "/2021/01/09/how-to-hot-reload-auto-refresh-react-app-on-WSL.html",
             "date": " • Jan 9, 2021"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "How To View Issues Commented On Github",
-            "content": "If you’re working on a React app on Windows using Windows Subsystem for Linux (WSL), you might find that your app does not reflect your changes on save. . To fix that, you have two options. You can run your app with . $ CHOKIDAR_USEPOLLING=true npm start . Note however, that you will need to do this every time you want to start your app. . A more permanent solution is to create a .env file in your project directory if you don’t already have one and add . $ CHOKIDAR_USEPOLLING=true . to the .env file. . Credit : https://stackoverflow.com/a/56199112 .",
+            "content": "Have you ever wanted to check back on a GitHub issue you made a comment on? I recently needed to do that and floundered about on the UI trying to find an link or button that would help me do that. Ultimately, I was unsuccessful and hand to turn to Google. Here’s how to do it courtesy of the the lovely folks at stackexchange. . Make sure you’re logged in and then enter the url . https://github.com/notifications/subscriptions?commenter={yourusername} . So in my case, that would be : . https://github.com/notifications/subscriptions?commenter=mbuotidem .",
             "url": "https://mbuotidem.github.io/blog/2021/01/08/how-to-view-issues-commented-on-github.html",
             "relUrl": "/2021/01/08/how-to-view-issues-commented-on-github.html",
             "date": " • Jan 8, 2021"
