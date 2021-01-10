@@ -2,25 +2,18 @@
 layout: post
 author: Isaac Mbuotidem
 ---
-If you're working on a React app on Windows using Windows Subsystem for Linux (WSL), you might find that your app does not reflect your changes on save. 
+
+Have you ever wanted to check back on a GitHub issue you made a comment on? I recently needed to do that and floundered about on the UI trying to find an link or button that would help me do that. Ultimately, I was unsuccessful and hand to turn to Google. Here's how to do it courtesy of the the lovely folks at [stackexchange](https://webapps.stackexchange.com/questions/103374/where-can-i-see-all-my-comments-on-issues-on-github).
 
 \
-To fix that, you have two options. You can run your app with 
+Make sure you're logged in and then enter the url
 
-`$ CHOKIDAR_USEPOLLING=true npm start` 
-
-Note however, that you will need to do this every time you want to start your app. 
+`https://github.com/notifications/subscriptions?commenter={yourusername}`
 
 \
-A more permanent solution is to create a `.env` file in your project directory if you don't already have one and add
+So in my case, that would be :
 
-`$ CHOKIDAR_USEPOLLING=true` 
-
-to the `.env` file. 
-
-\
-Credit : [https://stackoverflow.com/a/56199112](https://stackoverflow.com/a/62942176/7179900){:class="lnk"}
-
+`https://github.com/notifications/subscriptions?commenter=mbuotidem`
 
 
 
