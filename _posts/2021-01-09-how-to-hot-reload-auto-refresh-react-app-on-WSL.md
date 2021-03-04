@@ -14,18 +14,43 @@ Use the `cp` command to copy them over to your WSL filesystem like so:
 
 The above will copy the files to your WSL user account's home directory which you can always get to by typing `wsl ~` from `Command Prompt` or `Windows Terminal`. 
 
-If that still does not work, try running your app with: 
+If that still does not work, try running your app in the terminal by prepending the commands below to `npm start` For example: 
 
-`$ CHOKIDAR_USEPOLLING=true npm start` 
+`CHOKIDAR_USEPOLLING=true npm start` 
 
-Note however, that you will need to do this every time you want to start your app. 
+There is a chance that it still won't auto-reload. In that case, try running your app with:
+
+`FAST_REFRESH=false npm start`. 
+
+For whichever of these that works, you you might want to make it into a more permanent solution instead of having to type that in each time. To do that, you have two options. 
 
 \
-A more permanent solution is to create a `.env` file in your project directory if you don't already have one and add
+You can create a `.env` file in your project directory if you don't already have one and add
 
-`$ CHOKIDAR_USEPOLLING=true` 
+``` 
+CHOKIDAR_USEPOLLING=true
+FAST_REFRESH=false
+
+``` 
 
 to the `.env` file. 
+
+\
+Or you can edit your `package.json` file like so: 
+
+```
+{
+
+  "scripts": {
+    "start": "FAST_REFRESH=false react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+
+}
+````
 
 \
 Credit : [https://stackoverflow.com/a/56199112](https://stackoverflow.com/a/62942176/7179900){:class="lnk"}
