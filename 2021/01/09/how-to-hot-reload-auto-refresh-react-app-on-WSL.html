@@ -101,18 +101,41 @@ window.onload = wrap_img;
 
 <p>The above will copy the files to your WSL user account’s home directory which you can always get to by typing <code class="language-plaintext highlighter-rouge">wsl ~</code> from <code class="language-plaintext highlighter-rouge">Command Prompt</code> or <code class="language-plaintext highlighter-rouge">Windows Terminal</code>.</p>
 
-<p>If that still does not work, try running your app with:</p>
+<p>If that still does not work, try running your app in the terminal by prepending the commands below to <code class="language-plaintext highlighter-rouge">npm start</code> For example:</p>
 
-<p><code class="language-plaintext highlighter-rouge">$ CHOKIDAR_USEPOLLING=true npm start</code></p>
+<p><code class="language-plaintext highlighter-rouge">CHOKIDAR_USEPOLLING=true npm start</code></p>
 
-<p>Note however, that you will need to do this every time you want to start your app.</p>
+<p>There is a chance that it still won’t auto-reload. In that case, try running your app with:</p>
+
+<p><code class="language-plaintext highlighter-rouge">FAST_REFRESH=false npm start</code>.</p>
+
+<p>For whichever of these that works, you you might want to make it into a more permanent solution instead of having to type that in each time. To do that, you have two options.</p>
 
 <p><br />
-A more permanent solution is to create a <code class="language-plaintext highlighter-rouge">.env</code> file in your project directory if you don’t already have one and add</p>
+You can create a <code class="language-plaintext highlighter-rouge">.env</code> file in your project directory if you don’t already have one and add</p>
 
-<p><code class="language-plaintext highlighter-rouge">$ CHOKIDAR_USEPOLLING=true</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CHOKIDAR_USEPOLLING=true
+FAST_REFRESH=false
+
+</code></pre></div></div>
 
 <p>to the <code class="language-plaintext highlighter-rouge">.env</code> file.</p>
+
+<p><br />
+Or you can edit your <code class="language-plaintext highlighter-rouge">package.json</code> file like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+
+  "scripts": {
+    "start": "FAST_REFRESH=false react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+
+}
+</code></pre></div></div>
 
 <p><br />
 Credit : <a href="https://stackoverflow.com/a/62942176/7179900" class="lnk">https://stackoverflow.com/a/56199112</a></p>
